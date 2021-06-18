@@ -9,8 +9,8 @@ function closeFibon(input)
 {
 //max fibon number that is smaller than input
 var n = 0;
-while(fib(n)<input)
-{n++;}
+if(input==0){return 1;}
+while(fib(n)<input){n++;}
 return fib(n-1);
 }
 
